@@ -1,5 +1,4 @@
 import type { GithubRepo } from "./types";
-import linksData from "@/data/links.json";
 
 const GITHUB_API = "https://api.github.com";
 
@@ -14,8 +13,7 @@ function authHeaders(): HeadersInit {
   return headers;
 }
 
-export async function getRepos(): Promise<GithubRepo[]> {
-  const username = linksData.githubUsername;
+export async function getRepos(username: string): Promise<GithubRepo[]> {
   try {
     const res = await fetch(
       `${GITHUB_API}/users/${username}/repos?per_page=100&sort=updated`,
@@ -58,8 +56,7 @@ export interface GithubProfileStats {
   html_url: string;
 }
 
-export async function getProfileStats(): Promise<GithubProfileStats | null> {
-  const username = linksData.githubUsername;
+export async function getProfileStats(username: string): Promise<GithubProfileStats | null> {
   try {
     const res = await fetch(`${GITHUB_API}/users/${username}`, {
       headers: authHeaders(),

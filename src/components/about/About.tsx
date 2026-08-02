@@ -3,12 +3,19 @@ import { FiMapPin, FiMail } from "react-icons/fi";
 import SectionHeading from "@/components/ui/SectionHeading";
 import GlassCard from "@/components/ui/GlassCard";
 import Timeline from "./Timeline";
-import profile from "@/data/profile.json";
-import education from "@/data/education.json";
-import experience from "@/data/experience.json";
-import achievements from "@/data/achievements.json";
+import { readContent } from "@/lib/content";
+import type { Profile, EducationItem, ExperienceItem, AchievementItem } from "@/lib/types";
+import defaultProfile from "@/data/profile.json";
+import defaultEducation from "@/data/education.json";
+import defaultExperience from "@/data/experience.json";
+import defaultAchievements from "@/data/achievements.json";
 
-export default function About() {
+export default async function About() {
+  const profile = (await readContent<Profile>("profile")) ?? (defaultProfile as Profile);
+  const education = (await readContent<EducationItem[]>("education")) ?? defaultEducation;
+  const experience = (await readContent<ExperienceItem[]>("experience")) ?? defaultExperience;
+  const achievements = (await readContent<AchievementItem[]>("achievements")) ?? defaultAchievements;
+
   return (
     <section id="about" className="relative py-28">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">

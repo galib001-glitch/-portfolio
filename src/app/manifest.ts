@@ -1,7 +1,10 @@
 import type { MetadataRoute } from "next";
-import profile from "@/data/profile.json";
+import { readContent } from "@/lib/content";
+import type { Profile } from "@/lib/types";
+import defaultProfile from "@/data/profile.json";
 
-export default function manifest(): MetadataRoute.Manifest {
+export default async function manifest(): Promise<MetadataRoute.Manifest> {
+  const profile = (await readContent<Profile>("profile")) ?? (defaultProfile as Profile);
   return {
     name: profile.name,
     short_name: profile.shortName,

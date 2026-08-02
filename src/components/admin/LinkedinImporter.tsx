@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { FiUploadCloud } from "react-icons/fi";
-import links from "@/data/links.json";
+import type { Links } from "@/lib/types";
 
-export default function LinkedinImporter({ password }: { password: string }) {
+export default function LinkedinImporter({ password, links }: { password: string; links: Links }) {
   const [text, setText] = useState('{\n  "experience": [],\n  "education": [],\n  "certifications": [],\n  "skills": []\n}');
   const [status, setStatus] = useState<string | null>(null);
   const [merge, setMerge] = useState(false);

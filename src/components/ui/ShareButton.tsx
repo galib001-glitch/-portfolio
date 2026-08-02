@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import { FiShare2, FiCheck } from "react-icons/fi";
-import profile from "@/data/profile.json";
+import type { Profile } from "@/lib/types";
 
-export default function ShareButton({ className }: { className?: string }) {
+export default function ShareButton({ profile, className }: { profile: Profile; className?: string }) {
   const [copied, setCopied] = useState(false);
 
   async function share() {

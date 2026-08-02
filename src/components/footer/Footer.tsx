@@ -1,9 +1,8 @@
 import Link from "next/link";
 import { FiGithub, FiLinkedin, FiFacebook, FiMail } from "react-icons/fi";
-import profile from "@/data/profile.json";
-import links from "@/data/links.json";
+import type { Profile, Links } from "@/lib/types";
 
-export default function Footer() {
+export default function Footer({ profile, links }: { profile: Profile; links: Links }) {
   return (
     <footer className="relative border-t border-white/10 py-14">
       <div className="mx-auto max-w-7xl px-6 lg:px-10">

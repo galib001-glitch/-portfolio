@@ -1,5 +1,3 @@
-import linksData from "@/data/links.json";
-
 export interface ContributionDay {
   date: string;
   count: number;
@@ -48,7 +46,7 @@ query($login: String!) {
   }
 }`;
 
-export async function getContributionData(): Promise<ContributionData | null> {
+export async function getContributionData(username: string): Promise<ContributionData | null> {
   const token = process.env.GITHUB_TOKEN;
   if (!token) return null;
 
@@ -59,7 +57,7 @@ export async function getContributionData(): Promise<ContributionData | null> {
         Authorization: `Bearer ${token}`,
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ query: QUERY, variables: { login: linksData.githubUsername } }),
+      body: JSON.stringify({ query: QUERY, variables: { login: username } }),
       next: { revalidate: 3600 },
     });
     if (!res.ok) return null;

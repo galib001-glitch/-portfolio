@@ -3,8 +3,8 @@
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/ui/SectionHeading";
-import skillData from "@/data/skills.json";
 import { cn } from "@/lib/utils";
+import type { SkillData } from "@/lib/types";
 
 interface PositionedNode {
   id: string;
@@ -26,7 +26,7 @@ const CAT_RADIUS = 300;
 // the browser's V8, which otherwise trips a React hydration mismatch.
 const round = (n: number) => Math.round(n * 100) / 100;
 
-export default function SkillTree() {
+export default function SkillTree({ skillData }: { skillData: SkillData }) {
   const [hovered, setHovered] = useState<string | null>(null);
 
   const { nodes } = useMemo(() => {
@@ -74,7 +74,7 @@ export default function SkillTree() {
     });
 
     return { nodes: nodesArr };
-  }, []);
+  }, [skillData]);
 
   const activeCategory = useMemo(() => {
     if (!hovered) return null;

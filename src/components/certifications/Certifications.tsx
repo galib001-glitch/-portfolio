@@ -5,12 +5,9 @@ import { motion } from "framer-motion";
 import { FiLinkedin } from "react-icons/fi";
 import SectionHeading from "@/components/ui/SectionHeading";
 import CertCard from "./CertCard";
-import certifications from "@/data/certifications.json";
-import links from "@/data/links.json";
-import type { Certification } from "@/lib/types";
+import type { Certification, Links } from "@/lib/types";
 
-export default function Certifications() {
-  const certs = certifications as Certification[];
+export default function Certifications({ certs, links }: { certs: Certification[]; links: Links }) {
   const [category, setCategory] = useState<string>("All");
 
   const categories = useMemo(() => {

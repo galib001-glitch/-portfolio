@@ -3,14 +3,16 @@ import { FiActivity, FiUserPlus, FiArrowRight } from "react-icons/fi";
 import SectionHeading from "@/components/ui/SectionHeading";
 import GlassCard from "@/components/ui/GlassCard";
 import JoinRequestForm from "./JoinRequestForm";
-import collaborations from "@/data/collaborations.json";
-import research from "@/data/research.json";
+import { readContent } from "@/lib/content";
 import type { Collaboration, ResearchPaper } from "@/lib/types";
+import defaultCollaborations from "@/data/collaborations.json";
+import defaultResearch from "@/data/research.json";
 
-const items = collaborations as Collaboration[];
-const researchIds = new Set((research as ResearchPaper[]).map((r) => r.id));
+export default async function Collaborations() {
+  const items = (await readContent<Collaboration[]>("collaborations")) ?? (defaultCollaborations as Collaboration[]);
+  const research = (await readContent<ResearchPaper[]>("research")) ?? (defaultResearch as ResearchPaper[]);
+  const researchIds = new Set(research.map((r) => r.id));
 
-export default function Collaborations() {
   const running = items.filter((c) => c.status === "running");
   const open = items.filter((c) => c.status === "open");
 

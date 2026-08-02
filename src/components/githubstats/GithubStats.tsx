@@ -4,14 +4,16 @@ import GlassCard from "@/components/ui/GlassCard";
 import ContributionGraph from "./ContributionGraph";
 import type { GithubProfileStats } from "@/lib/github";
 import type { ContributionData } from "@/lib/githubGraphql";
-import links from "@/data/links.json";
+import type { Links } from "@/lib/types";
 
 export default function GithubStats({
   stats,
   contributions,
+  links,
 }: {
   stats: GithubProfileStats | null;
   contributions: ContributionData | null;
+  links: Links;
 }) {
   const cards = [
     { label: "Public Repos", value: stats?.public_repos ?? "—", icon: FiFolder },

@@ -1,8 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import profile from "@/data/profile.json";
-import links from "@/data/links.json";
+import type { Profile, Links } from "@/lib/types";
 
 interface Line {
   type: "input" | "output" | "system";
@@ -20,7 +19,7 @@ const HELP = [
 
 type Stage = "idle" | "name" | "email" | "message" | "confirm" | "sending" | "sent";
 
-export default function Terminal() {
+export default function Terminal({ profile, links }: { profile: Profile; links: Links }) {
   const [lines, setLines] = useState<Line[]>([
     { type: "system", text: `Galib // Contact Terminal v1.0` },
     { type: "system", text: `Type 'help' to see available commands.` },

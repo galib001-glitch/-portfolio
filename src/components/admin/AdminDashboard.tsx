@@ -11,6 +11,7 @@ import ProfileEditor from "./ProfileEditor";
 import SkillsEditor from "./SkillsEditor";
 import ListEditor from "./ListEditor";
 import ChangePasswordForm from "./ChangePasswordForm";
+import type { Links } from "@/lib/types";
 import {
   linksFields,
   educationFields,
@@ -29,7 +30,7 @@ import {
   emptyCollaboration,
 } from "./schemas";
 
-export default function AdminDashboard() {
+export default function AdminDashboard({ links }: { links: Links }) {
   const [password, setPassword] = useState("");
   const [unlocked, setUnlocked] = useState(false);
   const [checking, setChecking] = useState(false);
@@ -91,7 +92,7 @@ export default function AdminDashboard() {
         <ResumeUploader password={password} />
         <PhotoUploader password={password} />
       </div>
-      <LinkedinImporter password={password} />
+      <LinkedinImporter password={password} links={links} />
       <MessagesInbox password={password} />
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">

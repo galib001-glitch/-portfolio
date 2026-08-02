@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { getAllPosts } from "@/lib/blog";
-import profile from "@/data/profile.json";
+import { readContent } from "@/lib/content";
+import type { Profile } from "@/lib/types";
+import defaultProfile from "@/data/profile.json";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://galib-portfolio.vercel.app";
 
@@ -15,6 +17,7 @@ function escapeXml(str: string) {
 
 export async function GET() {
   const posts = await getAllPosts();
+  const profile = (await readContent<Profile>("profile")) ?? (defaultProfile as Profile);
 
   const items = posts
     .map(

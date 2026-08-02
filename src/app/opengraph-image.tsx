@@ -1,12 +1,14 @@
 import { ImageResponse } from "next/og";
-import profile from "@/data/profile.json";
+import { readContent } from "@/lib/content";
+import type { Profile } from "@/lib/types";
+import defaultProfile from "@/data/profile.json";
 
-export const runtime = "edge";
-export const alt = `${profile.name} — ${profile.title}`;
+export const alt = `${defaultProfile.name} — ${defaultProfile.title}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
 export default async function OgImage() {
+  const profile = (await readContent<Profile>("profile")) ?? (defaultProfile as Profile);
   return new ImageResponse(
     (
       <div

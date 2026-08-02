@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import About from "@/components/about/About";
 import OrbitBackground from "@/components/background/OrbitBackground";
 
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   title: "About",
   description: "Engineer, researcher, and builder — background, education and experience.",

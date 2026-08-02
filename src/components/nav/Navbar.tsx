@@ -5,6 +5,7 @@ import Link from "next/link";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { FiMenu, FiX, FiLock } from "react-icons/fi";
 import ShareButton from "@/components/ui/ShareButton";
+import type { Profile } from "@/lib/types";
 
 const SECTION_LINKS = [
   { href: "/about", label: "About" },
@@ -22,7 +23,7 @@ const PAGE_LINKS = [
   { href: "/contact", label: "Contact" },
 ];
 
-export default function Navbar() {
+export default function Navbar({ profile }: { profile: Profile }) {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { scrollYProgress } = useScroll();
@@ -61,7 +62,7 @@ export default function Navbar() {
                 {l.label}
               </Link>
             ))}
-            <ShareButton />
+            <ShareButton profile={profile} />
             <Link
               href="/admin"
               aria-label="Admin"
@@ -73,7 +74,7 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-3 lg:hidden">
-            <ShareButton />
+            <ShareButton profile={profile} />
             <Link
               href="/admin"
               aria-label="Admin"

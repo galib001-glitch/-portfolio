@@ -5,11 +5,9 @@ import { motion } from "framer-motion";
 import { FiSearch, FiGithub } from "react-icons/fi";
 import SectionHeading from "@/components/ui/SectionHeading";
 import ProjectCard from "./ProjectCard";
-import projectsData from "@/data/manual-projects.json";
 import type { ManualProject } from "@/lib/types";
 
-export default function Projects() {
-  const projects = projectsData as ManualProject[];
+export default function Projects({ projects }: { projects: ManualProject[] }) {
   const [query, setQuery] = useState("");
   const [language, setLanguage] = useState<string>("All");
 

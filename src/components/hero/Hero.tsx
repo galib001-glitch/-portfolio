@@ -6,8 +6,7 @@ import { motion, type Variants } from "framer-motion";
 import { FiArrowDown, FiGithub, FiDownload } from "react-icons/fi";
 import MagneticButton from "@/components/ui/MagneticButton";
 import TypingRoles from "./TypingRoles";
-import profile from "@/data/profile.json";
-import links from "@/data/links.json";
+import type { Profile, Links } from "@/lib/types";
 
 const GlobeScene = dynamic(() => import("./GlobeScene"), { ssr: false });
 
@@ -19,7 +18,7 @@ const letterVariants: Variants = {
   }),
 };
 
-export default function Hero() {
+export default function Hero({ profile, links }: { profile: Profile; links: Links }) {
   const name = profile.name;
 
   return (

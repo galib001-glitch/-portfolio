@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Research from "@/components/research/Research";
 import DataOrbitBackground from "@/components/background/DataOrbitBackground";
 
+export const revalidate = 0;
+
 export const metadata: Metadata = {
   title: "Research",
   description: "Conference papers, journal work and applied research.",
