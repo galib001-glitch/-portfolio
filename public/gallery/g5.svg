@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1050" viewBox="0 0 800 1050">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+    <radialGradient id="r" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1050" fill="url(#g)"/>
+  <rect width="800" height="1050" fill="url(#r)"/>
+  <g stroke="white" stroke-opacity="0.15" stroke-width="1">
+    <line x1="567" y1="320" x2="758" y2="307"/>
+    <line x1="498" y1="400" x2="534" y2="230"/>
+    <line x1="314" y1="54" x2="558" y2="466"/>
+    <line x1="443" y1="962" x2="439" y2="592"/>
+    <line x1="155" y1="917" x2="598" y2="616"/>
+    <line x1="696" y1="354" x2="607" y2="356"/>
+    <line x1="501" y1="295" x2="365" y2="801"/>
+    <line x1="446" y1="965" x2="377" y2="1009"/>
+    <line x1="670" y1="158" x2="740" y2="612"/>
+    <line x1="598" y1="278" x2="514" y2="937"/>
+  </g>
+  <text x="40" y="1010" font-family="monospace" font-size="22" fill="white" fill-opacity="0.5">Event Management</text>
+</svg>

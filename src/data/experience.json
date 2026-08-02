@@ -1,0 +1,49 @@
+[
+  {
+    "id": "revo-arts",
+    "role": "CEO & Founder",
+    "org": "REVO ARTS",
+    "period": "2023 - Present",
+    "points": [
+      "Lead and manage overall operations of a creative design and marketing agency.",
+      "Oversee branding, digital marketing, and multimedia content creation.",
+      "Collaborate with clients to deliver design solutions tailored to their business needs.",
+      "Develop and implement growth strategies to expand company reach and impact."
+    ]
+  },
+  {
+    "id": "presentation-creator",
+    "role": "Presentation & Content Creator",
+    "org": "Independent",
+    "period": "2024 - Present",
+    "points": [
+      "Created professional PowerPoint and Google Slides presentations for corporate and academic purposes.",
+      "Designed visually appealing, data-driven slides to communicate ideas effectively.",
+      "Worked with clients to develop content aligned with their objectives."
+    ]
+  },
+  {
+    "id": "freelance",
+    "role": "Freelance Graphic Designer & Brand Strategist",
+    "org": "Upwork / Fiverr / Behance",
+    "period": "2019 - Present",
+    "points": [
+      "Designed logos, flyers, and brand identities for clients worldwide.",
+      "Created engaging visual content for digital and print media.",
+      "Managed multiple projects across industries, delivering high-quality designs.",
+      "Enhanced brand presence for businesses through strategic design and marketing."
+    ]
+  },
+  {
+    "id": "baust-club",
+    "role": "Event Manager / Marketing Manager / Graphics Designer",
+    "org": "BAUST Mechatronics & Robotics Club",
+    "period": "2025 - Present",
+    "points": [
+      "Organized and managed technical events, workshops and seminars — planning, logistics and team coordination.",
+      "Led marketing and promotional activities across digital platforms to maximize event reach.",
+      "Designed posters, banners and social creatives for branding and event promotion.",
+      "Collaborated with club executives and technical teams for successful program execution."
+    ]
+  }
+]

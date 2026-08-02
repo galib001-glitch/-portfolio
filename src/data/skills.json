@@ -1,0 +1,101 @@
+{
+  "categories": [
+    {
+      "id": "languages",
+      "label": "Languages",
+      "color": "#38bdf8",
+      "skills": [
+        { "id": "c", "label": "C", "level": 80 },
+        { "id": "cpp", "label": "C++", "level": 80 },
+        { "id": "python", "label": "Python", "level": 78 },
+        { "id": "java", "label": "Java", "level": 75 },
+        { "id": "js", "label": "JavaScript", "level": 82 }
+      ]
+    },
+    {
+      "id": "web",
+      "label": "Web Development",
+      "color": "#a78bfa",
+      "skills": [
+        { "id": "html", "label": "HTML", "level": 88 },
+        { "id": "css", "label": "CSS", "level": 85 },
+        { "id": "tailwind", "label": "Tailwind CSS", "level": 82 },
+        { "id": "react", "label": "React", "level": 80 },
+        { "id": "nextjs", "label": "Next.js", "level": 72 }
+      ]
+    },
+    {
+      "id": "systems",
+      "label": "Systems & IoT",
+      "color": "#22d3ee",
+      "skills": [
+        { "id": "iot", "label": "IoT Systems", "level": 78 },
+        { "id": "embedded", "label": "Embedded / Real-Time Systems", "level": 70 },
+        { "id": "pcb", "label": "PCB Design & Fabrication", "level": 65 },
+        { "id": "sql", "label": "SQL / Databases", "level": 75 },
+        { "id": "mongodb", "label": "MongoDB", "level": 68 },
+        { "id": "edge-computing", "label": "Edge Computing", "level": 75 },
+        { "id": "tinyml", "label": "TinyML", "level": 68 },
+        { "id": "microcontrollers", "label": "Microcontrollers", "level": 76 },
+        { "id": "docker", "label": "Docker", "level": 70 }
+      ]
+    },
+    {
+      "id": "ai-ml",
+      "label": "AI & Machine Learning",
+      "color": "#34d399",
+      "skills": [
+        { "id": "anomaly-detection", "label": "Anomaly Detection", "level": 74 },
+        { "id": "condition-monitoring", "label": "Condition Monitoring", "level": 70 },
+        { "id": "domain-generalization", "label": "Domain Generalization", "level": 65 },
+        { "id": "test-time-adaptation", "label": "Test-Time Adaptation", "level": 63 },
+        { "id": "deep-learning", "label": "Deep Learning", "level": 76 },
+        { "id": "cnn-lstm", "label": "CNN-LSTM", "level": 72 },
+        { "id": "explainable-ai", "label": "Explainable AI (XAI)", "level": 74 },
+        { "id": "shap", "label": "SHAP", "level": 70 }
+      ]
+    },
+    {
+      "id": "iiot-security",
+      "label": "Industrial IoT Security",
+      "color": "#fb7185",
+      "skills": [
+        { "id": "iot-security", "label": "IoT Security", "level": 76 },
+        { "id": "intrusion-detection", "label": "Intrusion Detection", "level": 74 },
+        { "id": "industrial-iot", "label": "Industrial IoT", "level": 75 },
+        { "id": "predictive-maintenance", "label": "Predictive Maintenance", "level": 70 },
+        { "id": "smart-manufacturing", "label": "Smart Manufacturing", "level": 68 },
+        { "id": "industry-4", "label": "Industry 4.0", "level": 70 },
+        { "id": "mitre-attck", "label": "MITRE ATT&CK", "level": 68 },
+        { "id": "nist-csf", "label": "NIST CSF 2.0", "level": 66 },
+        { "id": "sabsa", "label": "SABSA", "level": 62 },
+        { "id": "security-governance", "label": "Security Governance", "level": 65 }
+      ]
+    },
+    {
+      "id": "design",
+      "label": "Design & Media",
+      "color": "#f472b6",
+      "skills": [
+        { "id": "photoshop", "label": "Photoshop", "level": 85 },
+        { "id": "illustrator", "label": "Illustrator", "level": 80 },
+        { "id": "canva", "label": "Canva", "level": 90 },
+        { "id": "video", "label": "Video Editing & Motion Graphics", "level": 78 },
+        { "id": "brand", "label": "Brand Design & Strategy", "level": 82 }
+      ]
+    },
+    {
+      "id": "strategy",
+      "label": "Marketing & Leadership",
+      "color": "#facc15",
+      "skills": [
+        { "id": "digital-marketing", "label": "Digital Marketing", "level": 80 },
+        { "id": "event", "label": "Event Management", "level": 85 },
+        { "id": "social", "label": "Social Media Management", "level": 82 },
+        { "id": "leadership", "label": "Leadership & Teamwork", "level": 88 },
+        { "id": "publicspeaking", "label": "Public Speaking", "level": 75 }
+      ]
+    }
+  ],
+  "core": { "id": "core", "label": "Galib" }
+}

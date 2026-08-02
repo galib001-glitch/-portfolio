@@ -1,0 +1,24 @@
+[
+  {
+    "id": "smart-medicine-box",
+    "type": "Conference Paper",
+    "title": "An IoT-Based QR-Code-Enabled Smart Medicine Box for Reducing Prescription Errors and Improving Medication Adherence",
+    "authors": [
+      "Abdullah Al Galib Tonmoy"
+    ],
+    "venue": "QPAIN 2026",
+    "year": "2026",
+    "status": "Accepted",
+    "abstract": "This work proposes an IoT-based smart medicine box that uses QR-code identification and real-time embedded sensing to reduce prescription errors and improve medication adherence. The system integrates sensor networks for biomedical monitoring with a real-time embedded controller to track dosage timing, verify prescriptions, and alert caregivers, aiming to close common gaps in at-home medication management.",
+    "keywords": [
+      "Sensor Networks for IoT",
+      "Smart Medicine Box",
+      "Biomedical Monitoring",
+      "Real-Time Embedded Systems",
+      "Medication Adherence"
+    ],
+    "doi": "",
+    "pdfUrl": "",
+    "bibtex": "@inproceedings{tonmoy2026smartmedbox,\n  title={An IoT-Based QR-Code-Enabled Smart Medicine Box for Reducing Prescription Errors and Improving Medication Adherence},\n  author={Tonmoy, Abdullah Al Galib},\n  booktitle={QPAIN 2026},\n  year={2026}\n}"
+  }
+]

@@ -1,0 +1,28 @@
+---
+title: "Building an IoT Smart Medicine Box"
+date: "2026-02-10"
+excerpt: "Notes from designing a QR-code-enabled medicine box aimed at reducing prescription errors and improving adherence."
+category: "Research"
+tags: ["iot", "embedded-systems", "healthcare"]
+---
+
+Medication non-adherence is a quiet, expensive problem — patients skip doses, mix up prescriptions,
+or lose track of refill schedules. For our QPAIN 2026 paper, we set out to build a smart medicine box
+that closes some of that gap using inexpensive, widely available IoT hardware.
+
+## The core idea
+
+Each compartment of the box is paired with a QR code tied to a specific prescription. A
+microcontroller-driven scanner verifies the prescription against a schedule stored locally, and flags
+mismatches before the patient opens the wrong compartment.
+
+## Why real-time embedded matters
+
+Cloud round-trips are fine for logging, but decisions about *this dose, right now* need to happen
+on-device. Keeping the verification loop embedded and real-time was central to the design — it also
+meant the system keeps working if connectivity drops.
+
+## What's next
+
+We're extending the sensor network to include simple biomedical monitoring (temperature, basic vitals)
+so caregivers get a fuller picture, not just adherence logs.

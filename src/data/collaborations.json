@@ -1,0 +1,30 @@
+[
+  {
+    "id": "smart-medicine-box",
+    "title": "IoT-Based Smart Medicine Box for Medication Adherence",
+    "area": "Healthcare IoT",
+    "description": "QR-code-enabled smart medicine box using real-time embedded sensing to reduce prescription errors and improve medication adherence. Paper accepted at QPAIN 2026.",
+    "status": "running",
+    "role": "Lead Researcher & Author",
+    "since": "2025",
+    "relatedResearchId": "smart-medicine-box"
+  },
+  {
+    "id": "iiot-cyber-threat-monitoring",
+    "title": "Explainable & Privacy-Preserving IIoT Cyber Threat Monitoring",
+    "area": "Industrial IoT Security",
+    "description": "CNN-LSTM based anomaly detection with SHAP explainability for resource-constrained Industrial IoT devices, mapped against MITRE ATT&CK and NIST CSF 2.0.",
+    "status": "running",
+    "role": "Lead Researcher",
+    "since": "2026",
+    "relatedResearchId": "iiot-cyber-threat-monitoring"
+  },
+  {
+    "id": "open-collaboration-slot",
+    "title": "New Research Collaborations",
+    "area": "IoT, Applied AI & Cybersecurity",
+    "description": "Open to joining or co-leading new research work in embedded IoT systems, applied machine learning, or industrial cybersecurity — as a co-researcher, research intern, or industry partner.",
+    "status": "open",
+    "seekingRoles": ["Co-Researchers", "Research Interns", "Industry Partners"]
+  }
+]

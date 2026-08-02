@@ -1,0 +1,26 @@
+{
+  "name": "Abdullah Al Galib Tonmoy",
+  "shortName": "Galib",
+  "title": "B.Sc. in Computer Science & Engineering",
+  "roles": [
+    "Software Engineer",
+    "IoT Developer",
+    "Research Author",
+    "Digital Strategist",
+    "Freelance Designer"
+  ],
+  "tagline": "Building intelligent systems at the intersection of embedded hardware, software engineering, and design.",
+  "bio": "Computer Science & Engineering undergraduate at Bangladesh Army University of Science and Technology (BAUST), working across IoT-based embedded systems, full-stack web development, and applied research. Founder of a creative design & marketing studio, with production experience in desktop, web, and mobile application development, database design, and digital brand strategy. Author of an IoT healthcare research paper accepted at QPAIN 2026.",
+  "location": "Bangladesh",
+  "email": "abdullahalgalib50@gmail.com",
+  "phone": "+8801943661180",
+  "avatar": "/avatar.jpg",
+  "resumeUrl": "/resume.pdf",
+  "availability": "Open to research collaborations, internships & freelance projects",
+  "languages": [
+    { "name": "English", "level": "Fluent" },
+    { "name": "Bangla", "level": "Fluent" },
+    { "name": "Hindi", "level": "Fluent" },
+    { "name": "Urdu", "level": "Basic" }
+  ]
+}

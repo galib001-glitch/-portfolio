@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="700" viewBox="0 0 800 700">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a0f47"/>
+      <stop offset="100%" stop-color="#5b1f8f"/>
+    </linearGradient>
+    <radialGradient id="r" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="700" fill="url(#g)"/>
+  <rect width="800" height="700" fill="url(#r)"/>
+  <g stroke="white" stroke-opacity="0.15" stroke-width="1">
+    <line x1="396" y1="144" x2="441" y2="432"/>
+    <line x1="583" y1="271" x2="536" y2="665"/>
+    <line x1="546" y1="266" x2="40" y2="565"/>
+    <line x1="36" y1="396" x2="568" y2="606"/>
+    <line x1="121" y1="416" x2="61" y2="402"/>
+    <line x1="448" y1="647" x2="36" y2="491"/>
+    <line x1="44" y1="626" x2="138" y2="53"/>
+    <line x1="417" y1="334" x2="642" y2="396"/>
+    <line x1="33" y1="155" x2="382" y2="237"/>
+    <line x1="121" y1="84" x2="692" y2="543"/>
+  </g>
+  <text x="40" y="660" font-family="monospace" font-size="22" fill="white" fill-opacity="0.5">Research Presentation</text>
+</svg>

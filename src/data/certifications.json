@@ -1,0 +1,281 @@
+[
+  {
+    "id": "cyber-essentials-msft",
+    "name": "Career Essentials in Cybersecurity by Microsoft and LinkedIn",
+    "issuer": "Microsoft",
+    "date": "Feb 2026",
+    "category": "Cybersecurity",
+    "skills": ["Cybersecurity", "Threat & Vulnerability Management"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "cyber-awareness-terminology",
+    "name": "Cybersecurity Awareness: Cybersecurity Terminology",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Cybersecurity",
+    "skills": ["Information Security Awareness"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "become-cybersecurity-professional",
+    "name": "Become a Cybersecurity Professional",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Cybersecurity",
+    "skills": ["OWASP", "Cybersecurity"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "cisco-cyberops-security-monitoring",
+    "name": "Cisco Certified CyberOps Associate (200-201) Cert Prep: 2 Security Monitoring",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Cybersecurity",
+    "skills": ["Security Monitoring"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "cisco-cyberops-security-concepts",
+    "name": "Cisco Certified CyberOps Associate (200-201) Cert Prep: 1 Security Concepts",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Cybersecurity",
+    "skills": ["Cybersecurity"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "cisco-cyberops-network-intrusion",
+    "name": "Cisco Certified CyberOps Associate (200-201) Cert Prep: 4 Network Intrusion Analysis",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Cybersecurity",
+    "skills": ["Network Traffic Analysis"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "cisco-cyberops-host-based-analysis",
+    "name": "Cisco Certified CyberOps Associate (200-201) Cert Prep: 3 Host-Based Analysis",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Cybersecurity",
+    "skills": ["Cybersecurity", "System Monitoring"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "cybersecurity-careers-certifications",
+    "name": "Cybersecurity Careers and Certifications",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Cybersecurity",
+    "skills": ["Career Management", "Cybersecurity"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "land-first-cybersecurity-job",
+    "name": "Land Your First Cybersecurity Job",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Cybersecurity",
+    "skills": ["Career Management", "Tech Career Skills"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "learning-owasp-top-10",
+    "name": "Learning the OWASP Top 10",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Cybersecurity",
+    "skills": ["OWASP", "Web Application Security"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "microsoft-security-copilot",
+    "name": "Microsoft Security Copilot",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Cybersecurity",
+    "skills": ["Security", "Incident Response"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "cybersecurity-foundations",
+    "name": "Cybersecurity Foundations",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Cybersecurity",
+    "skills": ["Cybersecurity"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "cybersecurity-threat-landscape",
+    "name": "The Cybersecurity Threat Landscape",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Cybersecurity",
+    "skills": ["Threat & Vulnerability Management"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "social-media-marketing-fb-twitter",
+    "name": "Social Media Marketing with Facebook and Twitter",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Marketing & Social Media",
+    "skills": ["Facebook Marketing", "Twitter Marketing"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "google-ads-essential-training",
+    "name": "Google Ads Essential Training",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Marketing & Social Media",
+    "skills": ["Google Ads"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "advanced-google-analytics-4",
+    "name": "Advanced Google Analytics 4 (GA4)",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Marketing & Social Media",
+    "skills": ["Google Analytics"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "digital-marketing-foundations",
+    "name": "Digital Marketing Foundations",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Marketing & Social Media",
+    "skills": ["Digital Marketing"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "integrated-online-marketing-plan",
+    "name": "Building an Integrated Online Marketing Plan",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Marketing & Social Media",
+    "skills": ["Digital Marketing"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "b2b-digital-marketing-guide",
+    "name": "The Ultimate Guide to B2B Digital Marketing",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Marketing & Social Media",
+    "skills": ["Digital Marketing", "B2B Marketing"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "marketing-on-instagram",
+    "name": "Marketing on Instagram",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Marketing & Social Media",
+    "skills": ["Instagram Marketing"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "strategic-content-marketing-reach",
+    "name": "Strategic Content Marketing: Grow Your Reach on Social Media",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Marketing & Social Media",
+    "skills": ["Social Media Branding"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "strategic-content-marketing-engage",
+    "name": "Strategic Content Marketing: Attract, Engage, and Retain",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Marketing & Social Media",
+    "skills": ["Customer Engagement", "Content Marketing"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "advanced-facebook-advertising",
+    "name": "Advanced Facebook Advertising",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Marketing & Social Media",
+    "skills": ["Facebook Ads"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "marketing-on-facebook",
+    "name": "Marketing on Facebook",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Marketing & Social Media",
+    "skills": ["Facebook Marketing"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "advertising-on-facebook",
+    "name": "Advertising on Facebook",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Marketing & Social Media",
+    "skills": ["Social Media Advertising", "Facebook"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "marketing-on-facebook-company-page",
+    "name": "Marketing on Facebook: Managing a Company Page",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Marketing & Social Media",
+    "skills": ["Facebook Marketing"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "social-media-marketing-small-business",
+    "name": "Social Media Marketing for Small Business",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Marketing & Social Media",
+    "skills": ["Small Business Marketing"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "social-media-marketing-tiktok-reels",
+    "name": "Social Media Marketing Strategy: TikTok and Instagram Reels",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Marketing & Social Media",
+    "skills": ["Instagram Marketing", "Online Video Marketing"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "social-media-marketing-strategy-optimization",
+    "name": "Social Media Marketing: Strategy and Optimization",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "Marketing & Social Media",
+    "skills": ["Social Media Marketing", "Social Media Optimization (SMO)"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "security-risks-ai-ml",
+    "name": "Security Risks in AI and Machine Learning: Categorizing Attacks and Failure Modes (2022)",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "AI & Data",
+    "skills": ["Security Risk"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  },
+  {
+    "id": "azure-ai-essentials",
+    "name": "Microsoft Azure AI Essentials: Workloads and Machine Learning on Azure",
+    "issuer": "LinkedIn",
+    "date": "Feb 2026",
+    "category": "AI & Data",
+    "skills": ["Azure AI Foundry", "Artificial Intelligence (AI)"],
+    "credentialUrl": "https://www.linkedin.com/in/galib-1000x/details/certifications/"
+  }
+]

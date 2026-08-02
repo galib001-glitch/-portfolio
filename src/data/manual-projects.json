@@ -1,0 +1,204 @@
+[
+  {
+    "id": "baby-safety-monitor",
+    "name": "Baby Safety Monitor",
+    "description": "AI-based smart baby safety monitoring and emergency alert system for vehicles — detects whether a baby seat is occupied/safe and escalates to parents if something looks wrong and nobody responds.",
+    "year": "2026",
+    "category": "featured",
+    "topics": ["iot", "ai", "esp32", "raspberry-pi", "android", "computer-vision"],
+    "languages": ["Python", "Kotlin"],
+    "highlights": [
+      "Sensor fusion on Raspberry Pi 5: radar presence, camera + YOLO vision, cry detection via audio spectrogram transformer, cabin temperature/weight.",
+      "ESP32 sensor-hub firmware (microphone + mmWave radar) feeding the Pi over a documented hardware link.",
+      "Rule-based alert escalation — push notification first, then SMS — if a parent doesn't respond in time.",
+      "Companion Android app in Kotlin + Jetpack Compose: live dashboard, alert acknowledgment, editable family profile.",
+      "Local SQLite storage with Firestore sync for real-time cross-device state."
+    ],
+    "githubUrl": "https://github.com/galib001-glitch/baby-safety-monitor",
+    "demoUrl": ""
+  },
+  {
+    "id": "guardian-medicine-box",
+    "name": "Guardian — Smart Medicine Box",
+    "description": "A web-based smart medicine management system for elderly care, combining QR-based digital prescriptions, a Firebase real-time database, and an ESP32-powered IoT medicine box.",
+    "year": "2026",
+    "category": "featured",
+    "topics": ["iot", "healthcare", "firebase", "esp32", "qr-code"],
+    "languages": ["C++", "JavaScript", "HTML", "CSS"],
+    "highlights": [
+      "Prescription QR Code Generator: turns a digital prescription (medicine, time slot, quantity) into a structured JSON payload and downloadable QR code.",
+      "Fixed dosing schedule mapped to time slots — morning, noon, evening, night — read directly off the QR.",
+      "Guardian Smart Medicine Box Control site drives an ESP32-based dispenser that reads the schedule and unlocks the right drawer at the right time.",
+      "Firebase real-time database keeps the prescription generator and the box control dashboard in sync."
+    ],
+    "githubUrl": "https://github.com/galib001-glitch/Guardian-A-Web-Based-Smart-Medicine-Box",
+    "demoUrl": ""
+  },
+  {
+    "id": "hotel-reservation-system",
+    "name": "Hotel Reservation System",
+    "description": "Desktop application for managing core hotel operations — guest reservations, room status, payments and administrative reporting — built with Java Swing and a Firebase Firestore backend.",
+    "year": "2025",
+    "category": "featured",
+    "topics": ["java", "javafx-swing", "firebase", "desktop"],
+    "languages": ["Java"],
+    "highlights": [
+      "Guest management with full CRUD, plus room management across Single/Double/Deluxe/Suite types with Available/Booked/Under-Maintenance status tracking.",
+      "Booking engine with date-range availability search and automated check-in/check-out that updates room status.",
+      "Payment tracking across Cash/Card/Online, with full guest bills generated at check-out.",
+      "Multi-level authentication with Admin, Manager and Receptionist roles, each scoped to specific permissions.",
+      "Daily revenue and monthly booking reports, plus a live view of current in-house guests."
+    ],
+    "githubUrl": "https://github.com/galib001-glitch/Hotel-Reservation-System",
+    "demoUrl": ""
+  },
+  {
+    "id": "garments-erp",
+    "name": "Garments Factory ERP System",
+    "description": "Desktop-based ERP system for garments factory operations covering inventory, production, employee management and order tracking.",
+    "year": "2025",
+    "category": "featured",
+    "topics": ["java", "javafx", "swing", "sql", "erp"],
+    "languages": ["Java", "SQL"],
+    "highlights": [
+      "Modules for inventory, production, employee management and order tracking.",
+      "Optimized SQL database schema for efficient storage and retrieval.",
+      "Interactive GUI built with JavaFX & Swing.",
+      "Automated reporting and workflow to reduce manual errors."
+    ],
+    "githubUrl": "https://github.com/galib001-glitch/GarmentsERP",
+    "demoUrl": ""
+  },
+  {
+    "id": "baust-library-management",
+    "name": "BAUST Library Management System",
+    "description": "A console-based library management program written in pure C for the BAUST university library, covering books, members and issue/return transactions with binary-file persistence.",
+    "year": "2025",
+    "category": "featured",
+    "topics": ["c", "file-handling", "console-app"],
+    "languages": ["C"],
+    "highlights": [
+      "Admin login system gating access to the management console.",
+      "Book, student, teacher and computer inventory management with add/view/search.",
+      "Book issue/return transaction system with an overdue fine-calculation placeholder.",
+      "All records persisted to binary .dat files (books, students, teachers, computers, transactions) — no external database needed.",
+      "Built to demonstrate structures, file I/O and modular programming in C for a real university library."
+    ],
+    "githubUrl": "https://github.com/galib001-glitch/Baust_Library_Management",
+    "demoUrl": "https://galib001-glitch.github.io/Baust_Library_Management/"
+  },
+  {
+    "id": "abbasuddin-hall-management",
+    "name": "Abbasuddin Ahmed Hall Management System",
+    "description": "A C++ console-based OOP system for managing student residence hall operations at BAUST — students, staff, dining and visitors — with persistent file-backed storage.",
+    "year": "2025",
+    "category": "featured",
+    "topics": ["cpp", "oop", "file-handling", "console-app"],
+    "languages": ["C++"],
+    "highlights": [
+      "Student management: roll/department/year/room assignment, fee status tracking, and stored complaints.",
+      "Staff management with attendance tracking and automatic monthly salary calculation.",
+      "Dining management that logs breakfast/lunch/dinner per student and auto-calculates the monthly meal bill.",
+      "Visitor log recording who visited whom and when, with full history lookup.",
+      "All data persisted to text-based .dat files for students, staff, dining and visitors."
+    ],
+    "githubUrl": "https://github.com/galib001-glitch/Abbasuddin_Hall_Management_System",
+    "demoUrl": ""
+  },
+  {
+    "id": "baust-bulletin",
+    "name": "BAUST Bulletin",
+    "description": "A social-media style bulletin platform for the BAUST community, built on a Node.js/Express backend with a JavaScript front end.",
+    "year": "2026",
+    "category": "featured",
+    "topics": ["nodejs", "express", "social-media"],
+    "languages": ["JavaScript"],
+    "highlights": [
+      "Node.js + Express server backing a campus social feed / bulletin board.",
+      "JavaScript front end for posting and browsing community updates."
+    ],
+    "githubUrl": "https://github.com/galib001-glitch/baust-bulletin",
+    "demoUrl": ""
+  },
+  {
+    "id": "galib-portfolio-v1",
+    "name": "Personal Portfolio — v1",
+    "description": "An earlier iteration of my personal portfolio site, hand-built and shipped live on GitHub Pages before this Next.js rebuild.",
+    "year": "2025",
+    "category": "featured",
+    "topics": ["portfolio", "html", "css"],
+    "languages": ["HTML", "CSS", "JavaScript"],
+    "highlights": [
+      "First live version of my personal site, deployed via GitHub Pages.",
+      "Superseded by the current Next.js + Tailwind rebuild, kept here as a milestone."
+    ],
+    "githubUrl": "https://github.com/galib001-glitch/galib",
+    "demoUrl": "https://galib001-glitch.github.io/galib/"
+  },
+  {
+    "id": "web-development-course2",
+    "name": "Web Development Coursework",
+    "description": "HTML/CSS/JavaScript coursework project from a web development course, deployed live via GitHub Pages.",
+    "year": "2025",
+    "category": "practice",
+    "topics": ["html", "css", "coursework"],
+    "languages": ["HTML", "CSS", "JavaScript"],
+    "highlights": [
+      "Practical exercises applying core HTML/CSS/JS concepts.",
+      "Deployed to GitHub Pages for live review."
+    ],
+    "githubUrl": "https://github.com/galib001-glitch/web-devlopment-course2",
+    "demoUrl": "https://galib001-glitch.github.io/web-devlopment-course2/"
+  },
+  {
+    "id": "competitive-programming-journey",
+    "name": "Competitive Programming Journey",
+    "description": "An ongoing archive of solved data-structure and algorithm problems in C++ — searching, sorting, string handling and pattern matching.",
+    "year": "2026",
+    "category": "practice",
+    "topics": ["cpp", "dsa-algorithm", "code-generation"],
+    "languages": ["C++"],
+    "highlights": [
+      "Linear and binary search, bubble sort and optimized bubble sort, insertion sort.",
+      "String concatenation (library and manual), string comparison and pattern matching."
+    ],
+    "githubUrl": "https://github.com/galib001-glitch/competitive-programming-journey",
+    "demoUrl": ""
+  },
+  {
+    "id": "codeforces-practice",
+    "name": "Codeforces Practice",
+    "description": "Solutions and notes from solving problems on the Codeforces competitive-programming platform.",
+    "year": "2026",
+    "category": "practice",
+    "topics": ["cpp", "competitive-programming"],
+    "languages": ["C++"],
+    "highlights": ["Problem-solving archive tracking progress on Codeforces."],
+    "githubUrl": "https://github.com/galib001-glitch/Code-Forces",
+    "demoUrl": ""
+  },
+  {
+    "id": "hackerrank-cpp-solutions",
+    "name": "HackerRank C++ Solutions",
+    "description": "A collection of C++ solutions to HackerRank problem-solving challenges.",
+    "year": "2026",
+    "category": "practice",
+    "topics": ["cpp", "hackerrank"],
+    "languages": ["C++"],
+    "highlights": ["Problem-solving practice archive on HackerRank."],
+    "githubUrl": "https://github.com/galib001-glitch/hackerank-cpp-solutions",
+    "demoUrl": ""
+  },
+  {
+    "id": "dsa-problems",
+    "name": "DSA Problems",
+    "description": "A dedicated practice repository of data structures and algorithms problems solved in C++.",
+    "year": "2026",
+    "category": "practice",
+    "topics": ["cpp", "dsa"],
+    "languages": ["C++"],
+    "highlights": ["Standalone DSA practice separate from the Codeforces/HackerRank archives."],
+    "githubUrl": "https://github.com/galib001-glitch/DSA_problems",
+    "demoUrl": ""
+  }
+]

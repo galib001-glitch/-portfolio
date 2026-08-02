@@ -1,0 +1,30 @@
+[
+  {
+    "id": "idea2",
+    "title": "IDEA 2.0",
+    "org": "Bangladesh Army University of Science and Technology",
+    "year": "2024",
+    "detail": "Competitive innovation challenge — developed and pitched creative product solutions, expanding knowledge in entrepreneurship and business strategy."
+  },
+  {
+    "id": "iot-workshop-24",
+    "title": "IoT Workshop",
+    "org": "Bangladesh Army University of Science and Technology",
+    "year": "2024",
+    "detail": "Hands-on experience integrating IoT hardware and software into real-world solutions."
+  },
+  {
+    "id": "pcb-workshop",
+    "title": "PCB Workshop",
+    "org": "Bangladesh Army University of Science and Technology",
+    "year": "2025",
+    "detail": "Designed and manufactured PCB circuits; professional skills in PCB fabrication."
+  },
+  {
+    "id": "robotics-workshop",
+    "title": "Basic Robotics Workshop",
+    "org": "Bangladesh Army University of Science and Technology",
+    "year": "2025",
+    "detail": "Applied robotics fundamentals integrating hardware and software into collaborative IoT projects."
+  }
+]

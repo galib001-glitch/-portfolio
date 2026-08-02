@@ -1,0 +1,23 @@
+[
+  {
+    "id": "baust",
+    "institution": "Bangladesh Army University of Science and Technology",
+    "degree": "B.Sc. in Computer Science and Engineering",
+    "period": "2024 - Present",
+    "detail": "Undergraduate coursework in computer science, embedded systems and software engineering."
+  },
+  {
+    "id": "rgcc",
+    "institution": "Rajshahi Govt. City College",
+    "degree": "Higher Secondary Certificate, Science",
+    "period": "2020 - 2022",
+    "detail": ""
+  },
+  {
+    "id": "rbhs",
+    "institution": "R.B. Govt. High School",
+    "degree": "Secondary School Certificate, Science",
+    "period": "2016 - 2020",
+    "detail": ""
+  }
+]
