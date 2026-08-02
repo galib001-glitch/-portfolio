@@ -31,7 +31,7 @@ export default function JoinRequestForm({ collaborationTitle }: { collaborationT
   if (status === "sent") {
     return (
       <p className="flex items-center gap-2 text-sm text-emerald-300">
-        <FiCheck /> Request sent — I'll get back to you at {form.email}.
+        <FiCheck /> Request sent — I&apos;ll get back to you at {form.email}.
       </p>
     );
   }

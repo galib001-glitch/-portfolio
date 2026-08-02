@@ -19,17 +19,19 @@ export default function Projects() {
     return ["All", ...Array.from(set)];
   }, [projects]);
 
-  const matches = (p: ManualProject) => {
-    const matchesQuery =
-      query.trim() === "" ||
-      p.name.toLowerCase().includes(query.toLowerCase()) ||
-      p.description.toLowerCase().includes(query.toLowerCase());
-    const matchesLang = language === "All" || p.languages?.includes(language);
-    return matchesQuery && matchesLang;
-  };
+  const filtered = useMemo(() => {
+    return projects.filter((p) => {
+      const matchesQuery =
+        query.trim() === "" ||
+        p.name.toLowerCase().includes(query.toLowerCase()) ||
+        p.description.toLowerCase().includes(query.toLowerCase());
+      const matchesLang = language === "All" || p.languages?.includes(language);
+      return matchesQuery && matchesLang;
+    });
+  }, [projects, query, language]);
 
-  const featured = useMemo(() => projects.filter((p) => p.category === "featured" && matches(p)), [projects, query, language]);
-  const practice = useMemo(() => projects.filter((p) => p.category === "practice" && matches(p)), [projects, query, language]);
+  const featured = useMemo(() => filtered.filter((p) => p.category === "featured"), [filtered]);
+  const practice = useMemo(() => filtered.filter((p) => p.category === "practice"), [filtered]);
 
   return (
     <section id="projects" className="relative py-28">
