@@ -10,6 +10,7 @@ import ObjectEditor from "./ObjectEditor";
 import ProfileEditor from "./ProfileEditor";
 import SkillsEditor from "./SkillsEditor";
 import ListEditor from "./ListEditor";
+import ChangePasswordForm from "./ChangePasswordForm";
 import {
   linksFields,
   educationFields,
@@ -97,6 +98,8 @@ export default function AdminDashboard() {
         <ProfileEditor password={password} />
         <ObjectEditor contentKey="links" password={password} label="Links" fields={linksFields} />
       </div>
+
+      <ChangePasswordForm currentPassword={password} onChanged={setPassword} />
 
       <SkillsEditor password={password} />
 

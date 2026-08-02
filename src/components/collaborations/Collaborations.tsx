@@ -4,9 +4,11 @@ import SectionHeading from "@/components/ui/SectionHeading";
 import GlassCard from "@/components/ui/GlassCard";
 import JoinRequestForm from "./JoinRequestForm";
 import collaborations from "@/data/collaborations.json";
-import type { Collaboration } from "@/lib/types";
+import research from "@/data/research.json";
+import type { Collaboration, ResearchPaper } from "@/lib/types";
 
 const items = collaborations as Collaboration[];
+const researchIds = new Set((research as ResearchPaper[]).map((r) => r.id));
 
 export default function Collaborations() {
   const running = items.filter((c) => c.status === "running");
@@ -40,7 +42,7 @@ export default function Collaborations() {
                 {c.role && <span>{c.role}</span>}
                 {c.since && <span>· Since {c.since}</span>}
               </div>
-              {c.relatedResearchId && (
+              {c.relatedResearchId && researchIds.has(c.relatedResearchId) && (
                 <Link
                   href="/research"
                   className="mt-4 inline-flex items-center gap-1.5 text-xs text-neon-cyan hover:underline"

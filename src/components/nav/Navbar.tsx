@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { motion, useScroll, useSpring } from "framer-motion";
 import { FiMenu, FiX, FiLock } from "react-icons/fi";
+import ShareButton from "@/components/ui/ShareButton";
 
 const SECTION_LINKS = [
   { href: "/about", label: "About" },
@@ -60,6 +61,7 @@ export default function Navbar() {
                 {l.label}
               </Link>
             ))}
+            <ShareButton />
             <Link
               href="/admin"
               aria-label="Admin"
@@ -71,6 +73,7 @@ export default function Navbar() {
           </div>
 
           <div className="flex items-center gap-3 lg:hidden">
+            <ShareButton />
             <Link
               href="/admin"
               aria-label="Admin"

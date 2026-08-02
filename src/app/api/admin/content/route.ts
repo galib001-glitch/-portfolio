@@ -30,7 +30,7 @@ export async function POST(req: NextRequest) {
 
   const { key, data, password } = body as { key: ContentKey; data: unknown; password?: string };
 
-  if (!isAdminAuthorized(password)) {
+  if (!(await isAdminAuthorized(password))) {
     return NextResponse.json({ ok: false, error: "Unauthorized" }, { status: 401 });
   }
   if (!key || !VALID_KEYS.includes(key)) {

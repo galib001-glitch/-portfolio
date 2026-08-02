@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
   }
 
   const password = formData.get("password");
-  if (!isAdminAuthorized(typeof password === "string" ? password : null)) {
+  if (!(await isAdminAuthorized(typeof password === "string" ? password : null))) {
     return NextResponse.json({ ok: false, error: "Unauthorized" }, { status: 401 });
   }
 

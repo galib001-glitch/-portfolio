@@ -16,7 +16,7 @@ export async function POST(req: NextRequest) {
   const body: LinkedInImportPayload = await req.json().catch(() => null as never);
   if (!body) return NextResponse.json({ ok: false, error: "Invalid JSON" }, { status: 400 });
 
-  if (!isAdminAuthorized(body.password)) {
+  if (!(await isAdminAuthorized(body.password))) {
     return NextResponse.json({ ok: false, error: "Unauthorized" }, { status: 401 });
   }
 

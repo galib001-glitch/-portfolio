@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
   if (!formData) return NextResponse.json({ ok: false, error: "Expected multipart/form-data" }, { status: 400 });
 
   const password = formData.get("password");
-  if (!isAdminAuthorized(typeof password === "string" ? password : null)) {
+  if (!(await isAdminAuthorized(typeof password === "string" ? password : null))) {
     return NextResponse.json({ ok: false, error: "Unauthorized" }, { status: 401 });
   }
 

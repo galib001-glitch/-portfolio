@@ -10,16 +10,6 @@
     "relatedResearchId": "smart-medicine-box"
   },
   {
-    "id": "iiot-cyber-threat-monitoring",
-    "title": "Explainable & Privacy-Preserving IIoT Cyber Threat Monitoring",
-    "area": "Industrial IoT Security",
-    "description": "CNN-LSTM based anomaly detection with SHAP explainability for resource-constrained Industrial IoT devices, mapped against MITRE ATT&CK and NIST CSF 2.0.",
-    "status": "running",
-    "role": "Lead Researcher",
-    "since": "2026",
-    "relatedResearchId": "iiot-cyber-threat-monitoring"
-  },
-  {
     "id": "open-collaboration-slot",
     "title": "New Research Collaborations",
     "area": "IoT, Applied AI & Cybersecurity",
