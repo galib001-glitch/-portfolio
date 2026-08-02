@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 import { isAdminAuthorized, readMessages } from "@/lib/content";
 
-export async function GET(req: NextRequest) {
-  const password = req.nextUrl.searchParams.get("password");
+export async function POST(req: NextRequest) {
+  const body = await req.json().catch(() => null);
+  const password = body?.password as string | undefined;
   if (!(await isAdminAuthorized(password))) {
     return NextResponse.json({ ok: false, error: "Unauthorized" }, { status: 401 });
   }

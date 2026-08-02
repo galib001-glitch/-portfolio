@@ -41,7 +41,11 @@ export default function AdminDashboard({ links }: { links: Links }) {
     setChecking(true);
     setError(null);
     try {
-      const res = await fetch(`/api/admin/messages?password=${encodeURIComponent(password)}`);
+      const res = await fetch("/api/admin/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password }),
+      });
       const json = await res.json();
       if (json.ok) {
         setUnlocked(true);

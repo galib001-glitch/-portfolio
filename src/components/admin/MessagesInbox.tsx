@@ -16,7 +16,11 @@ export default function MessagesInbox({ password }: { password: string }) {
 
   async function load() {
     try {
-      const res = await fetch(`/api/admin/messages?password=${encodeURIComponent(password)}`);
+      const res = await fetch("/api/admin/messages", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password }),
+      });
       const json = await res.json();
       if (json.ok) setMessages(json.data);
       else setStatus(json.error);
