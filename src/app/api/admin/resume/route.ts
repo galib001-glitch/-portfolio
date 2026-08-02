@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import fs from "node:fs/promises";
 import path from "node:path";
 import { isAdminAuthorized } from "@/lib/content";
+import { blobAvailable, uploadToBlob } from "@/lib/blob";
+import { kvSet } from "@/lib/kv";
 
 const RESUME_PATH = path.join(process.cwd(), "public", "resume.pdf");
 
@@ -35,6 +37,19 @@ export async function POST(req: NextRequest) {
       { ok: false, error: `Failed to parse PDF: ${err instanceof Error ? err.message : "unknown error"}` },
       { status: 500 }
     );
+  }
+
+  if (blobAvailable()) {
+    try {
+      const url = await uploadToBlob("resume.pdf", buffer, "application/pdf");
+      await kvSet("files:resume", url);
+      return NextResponse.json({ ok: true, extractedText, savedTo: url });
+    } catch (err) {
+      return NextResponse.json(
+        { ok: false, error: err instanceof Error ? err.message : "Failed to upload resume.", extractedText },
+        { status: 500 }
+      );
+    }
   }
 
   try {

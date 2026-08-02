@@ -3,7 +3,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Lightbox from "./Lightbox";
-import galleryData from "@/data/gallery.json";
 
 export interface GalleryImage {
   id: string;
@@ -12,8 +11,7 @@ export interface GalleryImage {
   height: number;
 }
 
-export default function MasonryGallery() {
-  const images = galleryData as GalleryImage[];
+export default function MasonryGallery({ images }: { images: GalleryImage[] }) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
   return (

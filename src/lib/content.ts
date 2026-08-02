@@ -37,6 +37,7 @@ export type ContentKey =
   | "skills"
   | "manual-projects"
   | "collaborations"
+  | "gallery"
   | "linkedin";
 
 async function readFileContent<T>(key: ContentKey): Promise<T | null> {

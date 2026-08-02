@@ -21,7 +21,7 @@ export default function ResumeUploader({ password }: { password: string }) {
       const res = await fetch("/api/admin/resume", { method: "POST", body: form });
       const json = await res.json();
       if (json.ok) {
-        setStatus("Resume uploaded and saved as /resume.pdf");
+        setStatus(`Resume uploaded. The "Download CV" button now serves this file.`);
         setExtracted(json.extractedText);
       } else {
         setStatus(json.error ?? "Upload failed.");

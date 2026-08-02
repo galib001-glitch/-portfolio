@@ -15,7 +15,7 @@
   "email": "abdullahalgalib50@gmail.com",
   "phone": "+8801943661180",
   "avatar": "/avatar.jpg",
-  "resumeUrl": "/resume.pdf",
+  "resumeUrl": "/api/resume",
   "availability": "Open to research collaborations, internships & freelance projects",
   "languages": [
     { "name": "English", "level": "Fluent" },
