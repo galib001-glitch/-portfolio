@@ -1,4 +1,4 @@
-import { put } from "@vercel/blob";
+import { put, del } from "@vercel/blob";
 
 // File uploads (resume PDF, gallery photos) go to Vercel Blob in production,
 // since — like the JSON content store — Vercel's filesystem is read-only at
@@ -16,4 +16,8 @@ export async function uploadToBlob(pathname: string, data: Buffer, contentType?:
     contentType,
   });
   return result.url;
+}
+
+export async function deleteFromBlob(url: string): Promise<void> {
+  await del(url);
 }
