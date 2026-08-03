@@ -14,6 +14,7 @@ interface SkillCategory {
   id: string;
   label: string;
   color: string;
+  description?: string;
   skills: SkillNode[];
 }
 
@@ -74,7 +75,10 @@ export default function SkillsEditor({ password }: { password: string }) {
   function addCategory() {
     setData((d) => ({
       ...d,
-      categories: [...d.categories, { id: `category-${Date.now()}`, label: "New Category", color: "#38bdf8", skills: [] }],
+      categories: [
+        ...d.categories,
+        { id: `category-${Date.now()}`, label: "New Category", color: "#38bdf8", description: "", skills: [] },
+      ],
     }));
     setOpenCat(data.categories.length);
   }
@@ -206,6 +210,19 @@ export default function SkillsEditor({ password }: { password: string }) {
                                 className="h-10 w-full rounded-lg border border-white/10 bg-black/30"
                               />
                             </div>
+                          </div>
+
+                          <div className="mb-4">
+                            <label className="mb-1 block text-xs text-white/40">
+                              Description (shown on the Skills page)
+                            </label>
+                            <textarea
+                              value={cat.description ?? ""}
+                              onChange={(e) => updateCategory(ci, { description: e.target.value })}
+                              rows={2}
+                              placeholder="A short line about this discipline…"
+                              className={`${inputClass} resize-none`}
+                            />
                           </div>
 
                           <div className="mb-2 flex items-center justify-between">

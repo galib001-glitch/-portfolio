@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import SkillTree from "@/components/skills/SkillTree";
+import SkillsShowcase from "@/components/skills/SkillsShowcase";
 import NetworkBackground from "@/components/background/NetworkBackground";
 import { readContent } from "@/lib/content";
 import type { SkillData } from "@/lib/types";
@@ -9,7 +9,7 @@ export const revalidate = 0;
 
 export const metadata: Metadata = {
   title: "Skills",
-  description: "An interactive skill network across languages, web, systems and design.",
+  description: "Languages, web, systems, AI/ML, security, design and leadership skills.",
 };
 
 export default async function SkillsPage() {
@@ -18,7 +18,7 @@ export default async function SkillsPage() {
   return (
     <div className="pt-24">
       <NetworkBackground />
-      <SkillTree skillData={skillData} />
+      <SkillsShowcase skillData={skillData} />
     </div>
   );
 }

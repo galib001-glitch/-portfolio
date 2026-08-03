@@ -1,9 +1,28 @@
 {
   "categories": [
     {
+      "id": "ai-ml",
+      "label": "AI & Machine Learning",
+      "color": "#34d399",
+      "description": "Applied machine learning research — anomaly detection, domain generalization, federated and privacy-preserving learning, and explainable models for real-world, non-stationary data.",
+      "skills": [
+        { "id": "machine-learning", "label": "Machine Learning", "level": 78 },
+        { "id": "anomaly-detection", "label": "Anomaly Detection", "level": 74 },
+        { "id": "condition-monitoring", "label": "Condition Monitoring", "level": 70 },
+        { "id": "domain-generalization", "label": "Domain Generalization", "level": 65 },
+        { "id": "federated-learning", "label": "Federated Learning", "level": 64 },
+        { "id": "test-time-adaptation", "label": "Test-Time Adaptation", "level": 63 },
+        { "id": "deep-learning", "label": "Deep Learning", "level": 76 },
+        { "id": "cnn-lstm", "label": "CNN-LSTM", "level": 72 },
+        { "id": "explainable-ai", "label": "Explainable AI (XAI)", "level": 74 },
+        { "id": "shap", "label": "SHAP", "level": 70 }
+      ]
+    },
+    {
       "id": "languages",
       "label": "Languages",
       "color": "#38bdf8",
+      "description": "The programming languages I reach for daily, from systems-level C/C++ to scripting and application logic.",
       "skills": [
         { "id": "c", "label": "C", "level": 80 },
         { "id": "cpp", "label": "C++", "level": 80 },
@@ -16,6 +35,7 @@
       "id": "web",
       "label": "Web Development",
       "color": "#a78bfa",
+      "description": "Building fast, modern interfaces end to end — from markup and styling to full React/Next.js applications.",
       "skills": [
         { "id": "html", "label": "HTML", "level": 88 },
         { "id": "css", "label": "CSS", "level": 85 },
@@ -25,40 +45,10 @@
       ]
     },
     {
-      "id": "systems",
-      "label": "Systems & IoT",
-      "color": "#22d3ee",
-      "skills": [
-        { "id": "iot", "label": "IoT Systems", "level": 78 },
-        { "id": "embedded", "label": "Embedded / Real-Time Systems", "level": 70 },
-        { "id": "pcb", "label": "PCB Design & Fabrication", "level": 65 },
-        { "id": "sql", "label": "SQL / Databases", "level": 75 },
-        { "id": "mongodb", "label": "MongoDB", "level": 68 },
-        { "id": "edge-computing", "label": "Edge Computing", "level": 75 },
-        { "id": "tinyml", "label": "TinyML", "level": 68 },
-        { "id": "microcontrollers", "label": "Microcontrollers", "level": 76 },
-        { "id": "docker", "label": "Docker", "level": 70 }
-      ]
-    },
-    {
-      "id": "ai-ml",
-      "label": "AI & Machine Learning",
-      "color": "#34d399",
-      "skills": [
-        { "id": "anomaly-detection", "label": "Anomaly Detection", "level": 74 },
-        { "id": "condition-monitoring", "label": "Condition Monitoring", "level": 70 },
-        { "id": "domain-generalization", "label": "Domain Generalization", "level": 65 },
-        { "id": "test-time-adaptation", "label": "Test-Time Adaptation", "level": 63 },
-        { "id": "deep-learning", "label": "Deep Learning", "level": 76 },
-        { "id": "cnn-lstm", "label": "CNN-LSTM", "level": 72 },
-        { "id": "explainable-ai", "label": "Explainable AI (XAI)", "level": 74 },
-        { "id": "shap", "label": "SHAP", "level": 70 }
-      ]
-    },
-    {
       "id": "iiot-security",
       "label": "Industrial IoT Security",
       "color": "#fb7185",
+      "description": "Securing industrial and manufacturing systems — threat modeling, intrusion detection and governance frameworks for Industry 4.0.",
       "skills": [
         { "id": "iot-security", "label": "IoT Security", "level": 76 },
         { "id": "intrusion-detection", "label": "Intrusion Detection", "level": 74 },
@@ -76,6 +66,7 @@
       "id": "design",
       "label": "Design & Media",
       "color": "#f472b6",
+      "description": "Visual storytelling across brand, print and motion — from concept to polished, publish-ready assets.",
       "skills": [
         { "id": "photoshop", "label": "Photoshop", "level": 85 },
         { "id": "illustrator", "label": "Illustrator", "level": 80 },
@@ -85,9 +76,27 @@
       ]
     },
     {
+      "id": "systems",
+      "label": "Systems & IoT",
+      "color": "#22d3ee",
+      "description": "Designing and building connected hardware systems — from PCBs and microcontrollers to the databases and edge compute that back them.",
+      "skills": [
+        { "id": "iot", "label": "IoT Systems", "level": 78 },
+        { "id": "embedded", "label": "Embedded / Real-Time Systems", "level": 70 },
+        { "id": "pcb", "label": "PCB Design & Fabrication", "level": 65 },
+        { "id": "sql", "label": "SQL / Databases", "level": 75 },
+        { "id": "mongodb", "label": "MongoDB", "level": 68 },
+        { "id": "edge-computing", "label": "Edge Computing", "level": 75 },
+        { "id": "tinyml", "label": "TinyML", "level": 68 },
+        { "id": "microcontrollers", "label": "Microcontrollers", "level": 76 },
+        { "id": "docker", "label": "Docker", "level": 70 }
+      ]
+    },
+    {
       "id": "strategy",
       "label": "Marketing & Leadership",
       "color": "#facc15",
+      "description": "Leading teams and campaigns — from digital marketing and events to public speaking and cross-functional leadership.",
       "skills": [
         { "id": "digital-marketing", "label": "Digital Marketing", "level": 80 },
         { "id": "event", "label": "Event Management", "level": 85 },

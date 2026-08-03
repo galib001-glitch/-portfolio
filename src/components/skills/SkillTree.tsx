@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import SectionHeading from "@/components/ui/SectionHeading";
+import SkillTreeMobile from "./SkillTreeMobile";
 import { cn } from "@/lib/utils";
 import type { SkillData } from "@/lib/types";
 
@@ -14,6 +15,8 @@ interface PositionedNode {
   x: number;
   y: number;
   categoryId: string;
+  angle: number;
+  skillIndex: number;
 }
 
 const WIDTH = 1300;
@@ -48,14 +51,16 @@ export default function SkillTree({ skillData }: { skillData: SkillData }) {
         x: catX,
         y: catY,
         categoryId: cat.id,
+        angle: catAngle,
+        skillIndex: -1,
       });
 
       // Scale each category's fan radius/spread with its own skill count so
       // dense categories (e.g. 10 skills) don't overlap sparse ones (5 skills).
       // Radius is capped well under half the distance between neighboring
       // category nodes so two dense fans can't reach into each other.
-      const skillRadius = Math.min(80 + cat.skills.length * 5, 115);
-      const spread = Math.min(0.45 + cat.skills.length * 0.05, 0.95) * Math.PI;
+      const skillRadius = Math.min(80 + cat.skills.length * 7, 160);
+      const spread = Math.min(0.45 + cat.skills.length * 0.06, 1.05) * Math.PI;
 
       cat.skills.forEach((skill, si) => {
         const skillAngle = catAngle - spread / 2 + (si / Math.max(1, cat.skills.length - 1)) * spread;
@@ -69,6 +74,8 @@ export default function SkillTree({ skillData }: { skillData: SkillData }) {
           x,
           y,
           categoryId: cat.id,
+          angle: skillAngle,
+          skillIndex: si,
         });
       });
     });
@@ -88,11 +95,13 @@ export default function SkillTree({ skillData }: { skillData: SkillData }) {
         <SectionHeading
           eyebrow="Skills"
           title="An interactive skill network"
-          description="Hover a node to trace its connections — from core discipline to specific tools and technologies."
+          description="Hover a node on desktop, or tap a category on mobile, to trace connections — from core discipline to specific tools and technologies."
           align="center"
         />
 
-        <div className="mx-auto max-w-5xl overflow-hidden rounded-3xl border border-white/10 bg-white/[0.02]">
+        <SkillTreeMobile skillData={skillData} />
+
+        <div className="mx-auto hidden max-w-5xl overflow-hidden rounded-3xl border border-white/10 bg-white/[0.02] md:block">
           <svg viewBox={`0 0 ${WIDTH} ${HEIGHT}`} className="h-auto w-full select-none">
             <defs>
               <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
@@ -140,14 +149,14 @@ export default function SkillTree({ skillData }: { skillData: SkillData }) {
               })}
 
             {/* core node */}
-            <circle cx={CENTER.x} cy={CENTER.y} r={70} fill="url(#coreGlow)" />
-            <circle cx={CENTER.x} cy={CENTER.y} r={30} fill="#0b1120" stroke="#3ba7ff" strokeWidth={1.5} />
+            <circle cx={CENTER.x} cy={CENTER.y} r={88} fill="url(#coreGlow)" />
+            <circle cx={CENTER.x} cy={CENTER.y} r={40} fill="#0b1120" stroke="#3ba7ff" strokeWidth={1.5} />
             <text
               x={CENTER.x}
-              y={CENTER.y + 4}
+              y={CENTER.y + 5}
               textAnchor="middle"
               className="fill-white font-mono-term"
-              fontSize={11}
+              fontSize={14}
             >
               {skillData.core.label}
             </text>
@@ -156,7 +165,27 @@ export default function SkillTree({ skillData }: { skillData: SkillData }) {
             {nodes.map((n) => {
               const isCat = n.level === 100;
               const isActive = activeCategory === n.categoryId;
-              const r = isCat ? 8 : 4 + n.level / 30;
+              const r = isCat ? 9 : 6;
+
+              // Skill labels sit close to their node, nudged a short fixed
+              // distance out along the same spoke (the line from the
+              // category node through the skill node) so they read as
+              // clearly attached to their dot rather than floating loose.
+              // Because labels are hidden unless their category is hovered
+              // (see opacity below), only one category's ~5-10 labels are
+              // ever on screen together, so this small offset is enough.
+              let labelX = n.x;
+              let labelY = isCat ? n.y - 16 : n.y;
+              let anchor: "start" | "middle" | "end" = "middle";
+              if (!isCat) {
+                const dx = Math.cos(n.angle);
+                const dy = Math.sin(n.angle);
+                const rung = 14 + (n.skillIndex % 3) * 13;
+                labelX = round(n.x + dx * rung);
+                labelY = round(n.y + dy * rung + 3);
+                anchor = dx > 0.15 ? "start" : dx < -0.15 ? "end" : "middle";
+              }
+
               return (
                 <g
                   key={n.id}
@@ -169,21 +198,22 @@ export default function SkillTree({ skillData }: { skillData: SkillData }) {
                     cy={n.y}
                     r={r + (isActive ? 3 : 0)}
                     fill={n.color}
-                    fillOpacity={isCat ? 0.85 : isActive ? 0.9 : 0.5}
+                    fillOpacity={isCat ? 0.85 : isActive ? 0.95 : 0.22}
                     stroke="white"
-                    strokeOpacity={isActive ? 0.8 : 0.15}
+                    strokeOpacity={isActive ? 0.8 : 0.12}
                     strokeWidth={1}
+                    className="transition-opacity duration-200"
                   />
                   <text
-                    x={n.x}
-                    y={isCat ? n.y - 16 : n.y + (n.y > CENTER.y ? 16 : -10)}
-                    textAnchor="middle"
+                    x={labelX}
+                    y={labelY}
+                    textAnchor={anchor}
                     fontSize={isCat ? 12 : 10}
                     className={cn(
                       "font-mono-term transition-opacity",
                       isCat ? "fill-white font-semibold" : "fill-white/70"
                     )}
-                    opacity={isCat || isActive || activeCategory === n.categoryId ? 1 : 0.55}
+                    opacity={isCat ? 1 : isActive ? 1 : 0}
                   >
                     {n.label}
                   </text>
